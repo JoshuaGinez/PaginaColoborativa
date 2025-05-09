@@ -34,10 +34,29 @@
   height: auto;
 }
 
-*{
-  background-color: #faf6f3;
+/* Declaración de variables para reutilizar colores */
+:root{
+    --color_fondo: #faf6f3;
+    --color_h: #df5386;
+    --color_texto: #7c3da3;
 }
 
+body{
+    background-color: var(--color_fondo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+     color: var(--color_h);
+}
+
+ p {
+      color: var(--color_texto); /* Aplica el color de la variable al texto de los párrafos */
+    }
+
+/* *{
+  background-color: #faf6f3;
+}
+ */
 .card { /* Clase para poner los eventos como tarjetas */
   border: 1px solid #ccc;
   padding: 15px;
