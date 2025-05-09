@@ -37,3 +37,14 @@
 *{
   background-color: #faf6f3;
 }
+
+.card { /* Clase para poner los eventos como tarjetas */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content { /* Clase para espeficificar cual es el contenido de la tarjeta */
+            margin-top: 10px;
+        }
