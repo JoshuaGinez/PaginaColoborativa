@@ -1,0 +1,22 @@
+*{
+    
+}
+
+
+
+.footerSocials{
+    font-family: "Montserrat", sans-serif;
+    text-align-last: center;
+    padding: 25px;
+    background-color: #f67131;
+    border: 10px solid #7c3da3;
+    border-radius: 20px;
+}
+
+
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
