@@ -1,41 +1,54 @@
-html{
+html {
   box-sizing: border-box;
-  font-size: 62.5%; /* rem = 10px */
+  font-size: 62.5%;
+  /* rem = 10px */
 }
-*,*::before, *::after{
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 /*Variables globlaes*/
 
-:root{
+:root {
   --color_fondo: #faf6f3;
   --color_h: #df5386;
   --color_texto: #7c3da3;
-  --color_naranjoso:#fb5607;
+  --color_naranjoso: #fb5607;
 }
 
-body{
+body {
   background-color: var(--color_fondo);
   line-height: 2;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color_h);
 }
 
-p{
-  color: var(--color_texto); /* Aplica el color de la variable al texto de los párrafos */
+p {
+  color: var(--color_texto);
+  /* Aplica el color de la variable al texto de los párrafos */
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
+
 /* utilidades*/
-.text-center{
+.text-center {
   text-align: center;
 }
+
 /* link Fuente montserrat*/
 .montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
@@ -105,23 +118,29 @@ a{
 }
 
 /* Declaración de variables para reutilizar colores */
-:root{
-    --color_fondo: #faf6f3;
-    --color_h: #df5386;
-    --color_texto: #7c3da3;
+:root {
+  --color_fondo: #faf6f3;
+  --color_h: #df5386;
+  --color_texto: #7c3da3;
 }
 
-body{
-    background-color: var(--color_fondo);
+body {
+  background-color: var(--color_fondo);
 }
 
-h1, h2, h3, h4, h5, h6 {
-     color: var(--color_h);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color_h);
 }
 
- p {
-      color: var(--color_texto); /* Aplica el color de la variable al texto de los párrafos */
-    }
+p {
+  color: var(--color_texto);
+  /* Aplica el color de la variable al texto de los párrafos */
+}
 
 
 .card {
@@ -141,9 +160,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.content { /* Clase para espeficificar cual es el contenido de la tarjeta */
-            margin-top: 10px;
-        }
+.content {
+  /* Clase para espeficificar cual es el contenido de la tarjeta */
+  margin-top: 10px;
+}
 
 .no-faltes::after {
   /* Se agrega pseudo elemento after */
@@ -153,6 +173,76 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background: #7c3da3;
+  color: #ebda3f;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border-radius: 30px 30px 0px 0px;
+  font-weight: bold;
+  font-size:small;
+}
+
+.footer a {
+  color: #ebda3f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f8f9fa;
+  text-decoration:none;
+}
+
+.footer-title {
+  font-family: "Montserrat", sans-serif;
+  color: #ebda3f;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-weight:bolder;
+}
+
+.footer-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  font-family: "Montserrat", sans-serif;
+  color: #ebda3f;
+  background: #df5386;
+  padding: 20px 20PX;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size:medium;
+}
 
 .footerSocials {
   font-family: "Montserrat", sans-serif;
@@ -164,16 +254,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Estilos header*/
-.nombre-pagina{
+.nombre-pagina {
   font-size: 2rem;
   margin-top: 5rem;
   text-align: center;
 }
-.nombre-pagina span{
-  color:black; 
+
+.nombre-pagina span {
+  color: black;
 }
 
-.contenedor-navegacion{
+.contenedor-navegacion {
   border-color: rgb(186, 179, 179);
   border-top-style: solid;
   border-width: 1px;
@@ -181,35 +272,41 @@ h1, h2, h3, h4, h5, h6 {
 
 
 }
-.navegacion-principal{
+
+.navegacion-principal {
   padding-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.contenedor{
+
+.contenedor {
   max-width: 120rem;
   margin: 0 auto 0 auto;
 
 }
-.sobre-nosotros{
+
+.sobre-nosotros {
   margin-top: 10rem;
-  background-image:  linear-gradient(to right , transparent 50%, var(--color_naranjoso) 50%, var(--color_naranjoso) 100%), url(https://static.wixstatic.com/media/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg/v1/fill/w_1000,h_572,al_c,q_85,usm_0.66_1.00_0.01/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg);
+  background-image: linear-gradient(to right, transparent 50%, var(--color_naranjoso) 50%, var(--color_naranjoso) 100%), url(https://static.wixstatic.com/media/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg/v1/fill/w_1000,h_572,al_c,q_85,usm_0.66_1.00_0.01/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg);
   background-position: left center;
   padding: 10rem 0;
   background-repeat: no-repeat;
   background-size: 100%, 100rem;
 }
-.sobre-nosotros-grid{
+
+.sobre-nosotros-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 8rem;
 }
 
 .texto-nosotros {
-  grid-column:  2/ 3;
- 
+  grid-column: 2/ 3;
+
 }
-.texto-nosotros p, .texto-nosotros h2{
+
+.texto-nosotros p,
+.texto-nosotros h2 {
   color: black;
 }
