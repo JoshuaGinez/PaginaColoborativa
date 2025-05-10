@@ -75,3 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   content: " 🎉¡NO FALTES!";
   color: #217BE7;
 }
+
+
+
+.footerSocials{
+    font-family: "Cormorant Upright", serif;
+    text-align-last: center;
+    padding: 25px;
+    background-color: #f67131;
+    border: 10px solid #7c3da3;
+    border-radius: 20px;
+}
