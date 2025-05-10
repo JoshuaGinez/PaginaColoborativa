@@ -1,88 +1,137 @@
 /* link Fuente montserrat*/
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 .cormorant-upright-light {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .cormorant-upright-regular {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .cormorant-upright-medium {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .cormorant-upright-semibold {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .cormorant-upright-bold {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-.img-fluid{
+  font-family: "Cormorant Upright", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-upright-regular {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-upright-medium {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-upright-semibold {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-upright-bold {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.img-fluid {
   max-width: 100%;
   height: auto;
 }
 
 /* Declaración de variables para reutilizar colores */
-:root{
-    --color_fondo: #faf6f3;
-    --color_h: #df5386;
-    --color_texto: #7c3da3;
+:root {
+  --color_fondo: #faf6f3;
+  --color_h: #df5386;
+  --color_texto: #7c3da3;
 }
 
-body{
-    background-color: var(--color_fondo);
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color_fondo);
 }
 
-h1, h2, h3, h4, h5, h6 {
-     color: var(--color_h);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color_h);
 }
 
- p {
-      color: var(--color_texto); /* Aplica el color de la variable al texto de los párrafos */
-    }
+p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color_texto);
+  /* Aplica el color de la variable al texto de los párrafos */
+}
 
 
-.card { /* Clase para poner los eventos como tarjetas */
+.card {
+  /* Clase para poner los eventos como tarjetas */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #faf6f3;
+  font-family: "Montserrat", sans-serif;
 }
 
-.card:hover { /* Hover para que cuando pase cursor cambie de color tarjeta */
+.card:hover {
+  /* Hover para que cuando pase cursor cambie de color tarjeta */
   background-color: #ebda3f;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
 
-.content { /* Clase para espeficificar cual es el contenido de la tarjeta */
-            margin-top: 10px;
-        }
+.content {
+  /* Clase para espeficificar cual es el contenido de la tarjeta */
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+}
 
-.no-faltes::after { /* Se agrega pseudo elemento after */
+.no-faltes::after {
+  /* Se agrega pseudo elemento after */
   content: " 🎉¡NO FALTES!";
   color: #217BE7;
+  font-family: "Montserrat", sans-serif;
 }
 
 
 
-.footerSocials{
-    font-family: "Cormorant Upright", serif;
-    text-align-last: center;
-    padding: 25px;
-    background-color: #f67131;
-    border: 10px solid #7c3da3;
-    border-radius: 20px;
+.footerSocials {
+  font-family: "Montserrat", sans-serif;
+  text-align-last: center;
+  padding: 25px;
+  background-color: #f67131;
+  border: 10px solid #7c3da3;
+  border-radius: 20px;
 }
