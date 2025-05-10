@@ -53,15 +53,18 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--color_texto); /* Aplica el color de la variable al texto de los párrafos */
     }
 
-/* *{
-  background-color: #faf6f3;
-}
- */
+
 .card { /* Clase para poner los eventos como tarjetas */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #faf6f3;
+}
+
+.card:hover { /* Hover para que cuando pase cursor cambie de color tarjeta */
+  background-color: #ebda3f;
+  cursor: pointer;
 }
 
 .content { /* Clase para espeficificar cual es el contenido de la tarjeta */
