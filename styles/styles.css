@@ -70,3 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 .content { /* Clase para espeficificar cual es el contenido de la tarjeta */
             margin-top: 10px;
         }
+
+.no-faltes::after { /* Se agrega pseudo elemento after */
+  content: " 🎉¡NO FALTES!";
+  color: #217BE7;
+}
