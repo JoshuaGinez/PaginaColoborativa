@@ -315,3 +315,20 @@ p {
     text-decoration: none;
 }
 
+#nosotros{
+  color: #7c3da3;
+  text-align: center;
+}
+
+#la-guelaguetza{
+  border:2px solid DodgerBlue;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#contexto{
+  color: #f67131;
+  text-align: center;
+  font-size:small;
+}
