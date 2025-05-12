@@ -50,12 +50,6 @@ a {
 }
 
 /* link Fuente montserrat*/
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 
 .courier-prime-regular {
   font-family: "Courier Prime", monospace;
@@ -258,16 +252,11 @@ p {
   font-size: 2rem;
   margin-top: 5rem;
   text-align: center;
-<<<<<<< HEAD
+
   }
 .nombre-pagina span{
   color:black; 
-=======
-}
 
-.nombre-pagina span {
-  color: black;
->>>>>>> 92150e7090f9eb9da04aaf303f778605a9a35457
 }
 
 .contenedor-navegacion {
