@@ -1,0 +1,348 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Variables globlaes*/
+
+:root {
+  --color_fondo: #faf6f3;
+  --color_h: #df5386;
+  --color_texto: #7c3da3;
+  --color_naranjoso: #fb5607;
+}
+
+body {
+  background-color: var(--color_fondo);
+  line-height: 2;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color_h);
+}
+
+p {
+  color: var(--color_texto);
+  /* Aplica el color de la variable al texto de los párrafos */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* utilidades*/
+.text-center {
+  text-align: center;
+}
+
+/* link Fuente montserrat*/
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.cormorant-upright-light {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-upright-regular {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-upright-medium {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-upright-semibold {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-upright-bold {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Declaración de variables para reutilizar colores */
+:root {
+  --color_fondo: #faf6f3;
+  --color_h: #df5386;
+  --color_texto: #7c3da3;
+}
+
+body {
+  background-color: var(--color_fondo);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color_h);
+}
+
+p {
+  color: var(--color_texto);
+  /* Aplica el color de la variable al texto de los párrafos */
+}
+
+
+.card {
+  /* Clase para poner los eventos como tarjetas */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #faf6f3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card:hover {
+  /* Hover para que cuando pase cursor cambie de color tarjeta */
+  background-color: #ebda3f;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  /* Clase para espeficificar cual es el contenido de la tarjeta */
+  margin-top: 10px;
+}
+
+.no-faltes::after {
+  /* Se agrega pseudo elemento after */
+  content: " 🎉¡NO FALTES!";
+  color: #217BE7;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background: #7c3da3;
+  color: #ebda3f;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  border-radius: 30px 30px 0px 0px;
+  font-weight: bold;
+  font-size:small;
+}
+
+.footer a {
+  color: #ebda3f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f8f9fa;
+  text-decoration:none;
+}
+
+.footer-title {
+  font-family: "Montserrat", sans-serif;
+  color: #ebda3f;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-weight:bolder;
+}
+
+.footer-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  font-family: "Montserrat", sans-serif;
+  color: #ebda3f;
+  background: #df5386;
+  padding: 20px 20PX;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size:medium;
+}
+
+.footerSocials {
+  font-family: "Montserrat", sans-serif;
+  text-align-last: center;
+  padding: 25px;
+  background-color: #f67131;
+  border: 10px solid #7c3da3;
+  border-radius: 20px;
+}
+
+/*Estilos header*/
+.nombre-pagina {
+  font-size: 3rem;
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  }
+  .nombre-pagina h1{
+    font-size: 4rem;
+    color:var(--color_naranjoso); 
+
+  }
+
+.nombre-pagina h1 span{
+ 
+   color:black; 
+
+}
+
+.contenedor-navegacion {
+  border-color: rgb(186, 179, 179);
+  border-top-style: solid;
+  border-width: 1px;
+  background-color: #7c3da3;
+
+}
+.contenedor-navegacion .navegacion-principal a{
+  text-decoration: none;
+  color:#ebda3f;
+}
+.contenedor-navegacion .navegacion-principal a:hover{
+  text-decoration: none;
+  color:#faf6f3;
+}
+
+.navegacion-principal {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 5rem;
+  font-weight: 900;
+  font-size: 2rem;
+
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto 0 auto;
+
+}
+
+.sobre-nosotros {
+  margin-top: 10rem;
+  background-image: linear-gradient(to right, transparent 50%, var(--color_naranjoso) 50%, var(--color_naranjoso) 100%), url(https://static.wixstatic.com/media/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg/v1/fill/w_1000,h_572,al_c,q_85,usm_0.66_1.00_0.01/aa02eb_11a128988d3f4e46992220a6adab8aad~mv2.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 100rem;
+}
+
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+
+.texto-nosotros {
+  grid-column: 2/ 3;
+
+}
+
+.texto-nosotros p,
+.texto-nosotros h2 {
+  color: black;
+}
+
+.subrayado {
+    text-decoration: none;
+}
+
+#nosotros{
+  color: #7c3da3;
+  text-align: center;
+}
+
+#la-guelaguetza{
+  border:2px solid DodgerBlue;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#contexto{
+  color: #f67131;
+  text-align: center;
+  font-size:small;
+}
